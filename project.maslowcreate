@@ -40,19 +40,10 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.2869692532942899,
-            "y": 0.5478927203065134,
+            "x": 0.2540263543191801,
+            "y": 0.5670498084291188,
             "uniqueID": 498343,
-            "ioValues": [
-                {
-                    "name": "geometry2",
-                    "ioValue": ""
-                },
-                {
-                    "name": "geometry1",
-                    "ioValue": ""
-                }
-            ]
+            "ioValues": []
         },
         {
             "atomType": "Circle",
@@ -68,6 +59,21 @@
             ]
         },
         {
+            "atomType": "Add BOM Tag",
+            "name": "Add BOM Tag",
+            "x": 0.6654465592972182,
+            "y": 0.5747126436781609,
+            "uniqueID": 940425,
+            "ioValues": [],
+            "BOMitem": {
+                "BOMitemName": "3/8-16 Locknut",
+                "numberNeeded": 1,
+                "costUSD": 0.0897,
+                "source": "https://www.mcmaster.com/95615a140",
+                "totalNeeded": 1
+            }
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
@@ -78,10 +84,37 @@
     "allConnectors": [
         {
             "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 571138,
+            "ap2ID": 498343
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
-            "ap1ID": 571138,
+            "ap1ID": 687455,
+            "ap2ID": 940425
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 498343,
             "ap2ID": 687455
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 212653,
+            "ap2ID": 498343
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 940425
         }
     ],
     "fileTypeVersion": 1,
