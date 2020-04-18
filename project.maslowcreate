@@ -8,6 +8,66 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "RegularPolygon",
+            "name": "RegularPolygon",
+            "x": 0.08052708638360176,
+            "y": 0.24904214559386972,
+            "uniqueID": 571138,
+            "ioValues": [
+                {
+                    "name": "number of sides",
+                    "ioValue": 6
+                },
+                {
+                    "name": "diameter",
+                    "ioValue": 0.6625
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.41215226939970717,
+            "y": 0.3754789272030651,
+            "uniqueID": 687455,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 0.453125
+                }
+            ]
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.2869692532942899,
+            "y": 0.5478927203065134,
+            "uniqueID": 498343,
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": ""
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": ""
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.09224011713030746,
+            "y": 0.6513409961685823,
+            "uniqueID": 212653,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 0.375
+                }
+            ]
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
@@ -15,6 +75,16 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 571138,
+            "ap2ID": 687455
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": "0.1"
 }
